@@ -1,1 +1,6 @@
 # Exercise-Recognition-and-Rep-Count
+#### - Akul Bajaj, Nhi Nguyen, Patricia Ornelas Jauregui, Akshay Pamnani, Manish Kumar Vuppugandla -
+## Data
+We chose to work with the “Exercise Recognition from Wearable Sensors” dataset from Microsoft Research Open Data. The data size is 3.14 GB, so we are dealing with quite large data. This dataset contains accelerometer and gyroscope recordings from over 94 participants performing various gym exercises. Here’s the link to the selected dataset: https://msropendata.com/datasets/799c1167-2c8f-44c4-929c-227bf04e2b9a.
+
+This dataset has two files, both of which are in binary MATLAB format. For this project, we will mainly work with the exercise_data.50.0000_singleonly.mat file. This file contains "single-activity" traces, which refer to only data during exercises, already separated out by exercise (as opposed to complete exercise sessions, which include lots of time where there's no exercise happening). Our goal is to perform exercise recognition and repetition counting; therefore, working with separately labeled exercises will be easier than with the "multi-activity" sessions. There are six features at each time point (x, y, and z from both the gyroscope and accelerometer sensors) with 0.02 seconds between each time point in the series.
